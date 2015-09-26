@@ -1,0 +1,42 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12 page-header">
+      <h1 class="page-title">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="glyphicon glyphicon-chevron-left"></span> 
+        Check where your friends are going
+        <span class="glyphicon glyphicon-chevron-right"></span> 
+        <span class="glyphicon glyphicon-chevron-right"></span> 
+      </h1><br/>
+      <div class="icons">
+        <span class="glyphicon glyphicon-glass"></span>
+        <span class="glyphicon glyphicon-music"></span>
+        <span class="glyphicon glyphicon-heart"></span>
+        <span class="glyphicon glyphicon-cutlery"></span>
+      </div>
+    </div>
+  </div>
+  <div class="row entry">
+    <form name="searchForm" class="col-lg-12">
+      <input type="text" ng-model="place2be" id="searchinput" placeholder="Enter the city you want to meet your friends" required autofocus>
+      <button class="btn btn-default btn-search" ng-click="search()">Search</button>
+    </form>
+  </div>
+  <div class="results" ng-controller="ResultsCtrl">
+  <div class="venue" ng-repeat="venue in results">
+    <img class="venueimg" ng-src="{{venue.image_url == undefined ? default_img : venue.image_url}}">
+    <div class="venueinfo">
+      <h4 class="venuehdr">{{venue.name}}</h4>
+      <span>{{venue.snippet_text}}</span>
+    </div>
+    <button class="btn btn-default btn-going" ng-click="goingPressed($index)">{{venue.going}} Going<br/><span ng-show="venue.meGoing">(ME too)</span></button>
+  </div>
+  </div>
+</div>
+
+<footer class="footer">
+      <p>&copy; Roel Verbunt for <a href="http://www.freecodecamp.com/challenges/basejump-build-a-nightlife-coordination-app">FreeCodeCamp</a> |
+         <a href="https://github.com/DaftMonk/generator-angular-fullstack/issues?state=open">Source</a></p>
+</footer>

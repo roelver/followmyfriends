@@ -1,0 +1,14 @@
+<div class="navbar navbar-default navbar-static-top" ng-controller="NavbarCtrl">
+  <div class="container">
+    <div class="navbar-header">
+      <a href="/" class="navbar-brand">followmyfriends</a>
+    </div>
+    <div collapse="isCollapsed" class="navbar-collapse collapse" id="navbar-main">
+
+      <ul class="nav navbar-nav navbar-right">
+        <li ng-hide="isLoggedIn()"><button id="connectButton" class="btn btn-info" ng-click="connectButton()">Sign in with Twitter</button></li>
+        <li ng-show="isLoggedIn()"><p class="navbar-text">Hello {{userName}} @{{userId}}</p> </li>
+      </ul>
+    </div>
+  </div>
+</div>

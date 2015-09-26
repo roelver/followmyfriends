@@ -1,0 +1,118 @@
+body {
+    background: url('/assets/images/nightlife.jpg') repeat-y;
+    background-size: content;
+    color: #fff;
+}
+
+h1 {
+    display: inline;
+}
+.navbar-text {
+    margin-left: 15px;
+    color: #fff !important;
+}
+
+.navbar-default, .navbar-brand, footer {
+    color: #fff !important;
+}
+
+.navbar-default, footer {
+    background-color: rgba( 255, 255, 255, 0.1 );
+}
+.navbar-default .navbar-nav > li > a, footer a {
+    color: #fff !important;
+}
+.page-header {
+    margin-top: 30px;
+    border-bottom: none;
+    line-height: 70px;
+}
+.page-title {
+}
+.glyphicon {
+    font-size: 35px;
+}
+.col-lg-12 {
+    text-align: center;
+}
+.icons span {
+    margin: 10px;
+}
+
+#connectButton {
+    margin-top: 7px;
+}
+#searchinput {
+    width: 80%;
+    background-color: rgba( 255, 255, 255, 0.4 );
+    color: #333;
+    border-radius: 6px;
+    padding: 6px;
+    font-size: 20px;
+}
+#searchinput::-webkit-input-placeholder {
+   color: #666;
+}
+#searchinput:-moz-placeholder { /* Firefox 18- */
+   color: #666;  
+}
+#searchinput::-moz-placeholder {  /* Firefox 19+ */
+   color: #666;  
+}
+#searchinput:-ms-input-placeholder {  
+   color: #666;  
+}
+.btn-search {
+    border-radius: 6px;
+    padding: 7px 20px;
+    font-size: 20px;
+    margin-top: 0;
+    vertical-align: top;
+}
+
+.entry {
+    margin-bottom: 30px;
+}
+.venue {
+    width: 100%;
+    margin: 2px 0;
+    padding: 3px;
+    display: inline-block;
+    border: 1px solid rgba(0,0,0,0.0);
+}
+.venue:hover {
+   border: 1px solid white;
+   background: rgba(0,0,0,0.3);
+}
+.venue img {
+    border: 2px solid white;
+    border-radius: 8px;
+    float: left;
+}
+.venueinfo {
+    width: calc(100% - 220px);
+    font-size: 16px;
+    float: left;
+    margin: 5px 10px;
+    text-shadow: 1px 1px #000;
+}
+.venuehdr {
+    margin: 0;
+    border-bottom: 1px solid white;
+}
+.btn-going {
+    width: 80px;
+    float: left;
+    height: 80px;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #E5E5E5;
+    width: 100%;
+}
+.footer.results {
+    position: relative;
+}
